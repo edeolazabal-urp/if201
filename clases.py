@@ -1,6 +1,7 @@
 """
 Clases a usar en nuestros proyectos
 Fecha: 02/09/2024
+Ultima modificación: 03/07/2024
 """
 class Persona:
     #def __init__(self,nombre, peso):
