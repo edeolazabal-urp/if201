@@ -28,11 +28,17 @@ class Persona:
 
 """
 Nueva clase: Atleta
-"""
+"""    
 class Atleta(Persona):
-    estatura = 0.0
+    def __init__(self, *args):
+        super().__init__(args[0], args[1])
+        if len(args) == 3:          
+            self.estatura = args[2]
+        else:
+            self.estatura = 0.0
+       
 
-    def calcular_imc(self):
+    def calcular_imc(self):       
         return self.peso / (self.estatura * self.estatura)
     def __str__(self): # Permite obtener una cadena con todos los valores
         return 'Atleta (nombre={}, peso={}, estatura={})'.format(

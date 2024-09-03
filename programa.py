@@ -33,8 +33,14 @@ print(atl2)
 # Asignar valores a la propiedad estatura
 atl1.estatura = 1.65
 atl2.estatura = 1.60
+print('Atleta: {}, IMC={:.2f}'.format(atl1.nombre,
+                                  atl1.calcular_imc()))
+print('Atleta: {}, IMC={:.2f}'.format(atl2.nombre,
+                                  atl2.calcular_imc()))
 print(atl1)
 print(atl2)
+atl1 = cl.Atleta("José", 70, 1.45)
+atl2 = cl.Atleta("Rosa",50, 1.8)
 print('Atleta: {}, IMC={:.2f}'.format(atl1.nombre,
                                   atl1.calcular_imc()))
 print('Atleta: {}, IMC={:.2f}'.format(atl2.nombre,
