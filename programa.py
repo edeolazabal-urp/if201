@@ -46,3 +46,19 @@ print('Atleta: {}, IMC={:.2f}'.format(atl1.nombre,
                                   atl1.calcular_imc()))
 print('Atleta: {}, IMC={:.2f}'.format(atl2.nombre,
                                   atl2.calcular_imc()))
+perX = cl.Persona("Andrea", 50)
+perX.caminar()   # metodo caminar sin argumentos
+print(perX)
+perX.caminar(24) # metodo caminar con 1 argumento
+print(perX)
+perX.caminar(12, "campo") # metodo caminar con 2 argumento
+print(perX)
+atlX = cl.Atleta("Rodrigo", 75) # constructor con 2 argumentos
+print(atlX)
+print("IMC: {}".format(atlX.calcular_imc()) )
+atlX.estatura = 1.73
+print(atlX)
+print("IMC: {:.2f}".format(atlX.calcular_imc()) )
+atlY = cl.Atleta("Ximena",52, 1.60) # constructor con 3 argumentos
+print(atlY)
+print("IMC: {:.2f}".format(atlY.calcular_imc()) )
