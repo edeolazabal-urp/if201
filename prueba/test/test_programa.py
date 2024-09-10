@@ -3,7 +3,7 @@ Módulo de pruebas unitarias para programa.py
 Fecha: 09/09/2024
 '''
 import unittest
-from prueba.programa import suma, es_mayor
+from prueba.programa import suma, es_mayor, divide
 
 class TestPrograma(unittest.TestCase):
     # Métodos de prueba
@@ -21,6 +21,12 @@ class TestPrograma(unittest.TestCase):
     def test_verifica_que_no_es_mayor(self):
        self.assertFalse(es_mayor(2,8))
 # Desarrollar pruebas para la division de 2 numeros
+    def test_division_de_positivo_con_negativo(self):
+       self.assertEqual(divide(10, -2), -5)
+       self.assertEqual(divide(-4, 2), -2)
+    def test_division_por_cero(self):
+        with self.assertRaises(ValueError):
+           divide(10, 0)
 
 if __name__ == '__main__':
  unittest.main()
