@@ -3,7 +3,7 @@ Módulo de pruebas unitarias para programa.py
 Fecha: 09/09/2024
 '''
 import unittest
-from programa import suma, es_mayor
+from prueba.programa import suma, es_mayor
 
 class TestPrograma(unittest.TestCase):
     # Métodos de prueba
