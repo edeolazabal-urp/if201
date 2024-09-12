@@ -28,5 +28,13 @@ class TestPrograma(unittest.TestCase):
         with self.assertRaises(ValueError):
            divide(10, 0)
 
+    def test_suma_parametrizada (self):
+       test_cases = [(1,2,3), (-1,-2,-3), (0,0,0), (1,-1, 0)]
+       for x, y, resultado in test_cases:
+          with self.subTest(x=x, y=y, resultado=resultado):
+             self.assertEqual(suma(x,y), resultado)
+
+
+
 if __name__ == '__main__':
  unittest.main()
