@@ -40,6 +40,7 @@ class Perecible(Producto):
         return f'Perecible (precio: {self.precio}, stock: {self.stock}, fecha_vencimiento: {self.fecha_vencimiento})'
 
 ## prueba
+'''
 prd1 = Producto(5,100)
 print(prd1)
 
@@ -61,3 +62,4 @@ print(str(per1.inventario_valorizado()))
 
 per1.fecha_vencimiento = datetime.strptime('2024-09-10',"%Y-%m-%d").date()
 print(str(per1.inventario_valorizado()))
+'''
