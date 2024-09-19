@@ -1,6 +1,6 @@
 '''
 prueba clase Persona_parametrizada
-Fecha: 05/09/2024
+Fecha: 05/09/2024 - TEST
 '''
 # del arcivo clases.py importar solo Persona_parametrizada
 from clases import Persona_parametrizada as pp, Empleado as Emp
