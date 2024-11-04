@@ -1,0 +1,7 @@
+1,pizarra,150
+2,proyector,50
+3,camara,75
+4,Control remoto,140
+5,Sillas,2000
+6,Lapiceros,3000
+7,Cuaderno,2300
